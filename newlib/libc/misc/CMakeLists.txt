@@ -37,6 +37,6 @@ picolibc_sources(
   ffs.c
   fini.c
   init.c
-  lock.c
+  # lock.c
   unctrl.c
   )

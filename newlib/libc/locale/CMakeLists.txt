@@ -36,7 +36,7 @@ picolibc_sources(
   duplocale.c
   freelocale.c
   locale.c
-  localeconv.c
+  # localeconv.c
   lnumeric.c
   newlocale.c
   timelocal.c

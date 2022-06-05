@@ -441,6 +441,17 @@ set(PICOLIBC_COMPILE_OPTIONS
   "-Werror=vla"
   "-Warray-bounds"
   "-Wold-style-definition"
+  "-Wno-format"
+  "-Wno-pedantic"
+  "-Wno-switch-enum"
+  "-Wno-unused-parameter"
+  "-Wno-duplicated-branches"
+  "-Wno-sign-compare"
+  "-Wno-implicit-fallthrough"
+  "-Wno-parentheses"
+  "-Wno-unused-variable"
+  "-Wno-unused-label"
+  "-Wno-maybe-uninitialized"
   ${TLSMODEL}
   ${TARGET_COMPILE_OPTIONS}
   ${PICOLIBC_EXTRA_COMPILE_OPTIONS}

@@ -33,5 +33,5 @@
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 picolibc_sources(
-  errno.c
+  #errno.c
   )
