@@ -58,9 +58,13 @@ function(picolibc_sources_flags flags)
 
   # Set flags if specified
   if(flags)
-    set_source_files_properties(${sources}
+    foreach(flag ${flags})
+      foreach(source ${sources})
+	set_property(SOURCE ${source}
       TARGET_DIRECTORY c
-      PROPERTIES COMPILE_OPTIONS "${flags}")
+	  APPEND PROPERTY COMPILE_OPTIONS ${flag})
+      endforeach()
+    endforeach()
   endif()
 endfunction()
 
