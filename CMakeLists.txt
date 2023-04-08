@@ -456,6 +456,7 @@ set(PICOLIBC_COMPILE_OPTIONS
   "-Wno-unused-variable"
   "-Wno-unused-label"
   "-Wno-maybe-uninitialized"
+  "-fno-lto"
   ${TLSMODEL}
   ${TARGET_COMPILE_OPTIONS}
   ${PICOLIBC_EXTRA_COMPILE_OPTIONS}
